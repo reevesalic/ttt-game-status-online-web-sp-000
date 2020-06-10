@@ -44,7 +44,7 @@ end
 
 # The `#winner` method should accept a board and return the token, "X" or "O" that
 # has won the game given a winning board.
-def winner?(board)
+def winner(board)
   binding.pry
   if won?(board)
     return board[combo[0]]

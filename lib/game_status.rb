@@ -41,7 +41,7 @@ def over?(board)
 end
 
 def winner?(board)
- winner(board) == "X" || winner(board) == "O"
-   puts "You've Won #{winner(board)}"
+  if won?(board)
+    return board[won?(board[0])]
  end
 end

@@ -42,7 +42,7 @@ end
 
 def winner?(board)
   if won?(board)
-    return board[winner?(board)[0]]
+    return board[index[0]]
 
  end
 end

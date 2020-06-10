@@ -1,4 +1,6 @@
-# Helper Method
+
+
+require "pry"# Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -40,7 +42,10 @@ def over?(board)
   end
 end
 
+# The `#winner` method should accept a board and return the token, "X" or "O" that
+# has won the game given a winning board.
 def winner?(board)
+  binding.pry
   if won?(board)
     return board[combo[0]]
 

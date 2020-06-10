@@ -46,8 +46,7 @@ end
 # has won the game given a winning board.
 def winner(board)
   winning_combo = won?(board)
-  binding.pry
- if winning_combo
+  if winning_combo
     return board[winning_combo[0]]
  end
 end
